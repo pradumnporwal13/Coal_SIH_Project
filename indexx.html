@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH 1313 Hardware</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navBar">
+            <div class="RightSideOfNavBar">
+                <h1 id="coal-Heading">.COAL</h1>
+                <img src="https://clipart-library.com/images_k/steam-train-silhouette/steam-train-silhouette-17.png" alt="" height="70px">
+
+            </div>
+            <div class="LeftSideOfNavBar">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Project">Project</a></li>
+                    <li><a href="#Technology-Stack">Technology Stack</a></li>
+                    <!-- <li><a href="">Team</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="Home-Section" id="Home">
+        <H1>·Live <u> Weight Tracking on Rail Carriage</H1></u>
+        <form action="">
+            <input type="number" name=""  placeholder="Enter Railway Track Number">
+            <button type="button" id="checkButton">Check</button>
+        </form>
+        <div class="tablepart">
+            <table border="1px" cellspacing="0px" id="dataTable">
+                <thead>
+                    <tr>
+                        <th id="wagonNumber">Wagon Number</th>
+                        <th>Weight(in KGs)</th>
+                        <th>Overloading/Underloading status</th>
+                        <th>Penalty</th>
+                        <th>Temp</th>
+                        <th>Humidity</th>
+                        <th>Stats</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>68789</td>
+                        <td>Underloading</td>
+                        <td>4Rs/Kg</td>
+                        <td>23</td>
+                        <td>67</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>68889</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>24</td>
+                        <td>67</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>73658</td>
+                        <td>Overloading</td>
+                        <td>5Rs/Kg</td>
+                        <td>24</td>
+                        <td>68</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>70542</td>
+                        <td>Overloading</td>
+                        <td>2Rs/Kg</td>
+                        <td>23</td>
+                        <td>65</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>68569</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>23</td>
+                        <td>65</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>65432</td>
+                        <td>Underloading</td>
+                        <td>2Rs/Kg</td>
+                        <td>24</td>
+                        <td>58</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>56765</td>
+                        <td>Underloading</td>
+                        <td>8Rs/Kg</td>
+                        <td></td>
+                        <td></td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>70841</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>23</td>
+                        <td>65</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>43267</td>
+                        <td>Underloading</td>
+                        <td>12Rs/Kg</td>
+                        <td>25</td>
+                        <td>64</td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><img src="https://png.pngtree.com/png-vector/20221226/ourmid/pngtree-3d-pie-chart-for-analysis-ratios-data-business-icon-vector-png-image_6537892.png" alt="" height="35px"></td>
+                        <td><img src="https://pngimg.com/uploads/gps/gps_PNG38.png" alt="" height="30px"></td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            
+        </div>
+
+        <div class="ExcelSheetDownload">
+            <button id="ExcelSheet">Download Excel Sheet</button>
+            <button id="ResetSensors">Reset Load</button>
+        </div>
+       
+    </section>
+    <section  class="Project-Section" id="Project">
+        <div id="HeadingOfProjectSection"><h1>Problem Statement by</h1><img id="Ministry_of_Coal_India_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ministry_of_Coal_India.svg/1200px-Ministry_of_Coal_India.svg.png" alt="" height="60px"></div>
+        
+
+        <div id="DescriptionOfProject">
+            <h4><b>Smart India Hackathon 1313 : </b> <u>A system of IoT Devices to prevent under-loading / overloading of Railway wagons.</u></h4>
+            <br>
+            <h4><b>Description : </b>CIL has been supplying coal to its consumers by Rail through Railway Sidings. The railway wagons at such sidings are loaded through contractual means by payloader. The loading of wagons by contractual arrangement often results in overloading or underloading Railway wagons. The rules of Penal overloading and underloading are notified by Railway. Any penalty for overloading charged by the Railway for any consignment is payable by the purchaser. However, in case of underloading of wagons, credit for idle freight is adjusted in coal bills. Thus any idle freight for under-loading is borne by CIL. During 2021-22, the expense for under-loading was nearly Rs.593 Cr. whereas the contract for wagon loading itself was only Rs.276 Cr. Hence, a digital solution in the form of sensor/ IoT is needed to prevent the under-loading and overloading of Railway wagons.</h4>
+            <br>
+            <h4><b>Our Solution :</b> We have developed an IoT-based system to address the challenges associated with the overloading and underloading of coal wagons. Our solution consists of an IOT setup that accurately weighs the coal loaded inside the wagon, providing real-time data of the weight(in Kgs) carried by each wagon on our website (While loading of Wagons). Additionally, it can detect temperature and humidity levels within the coal.</h4>
+            
+            
+            <br><br>
+            <h4>On our website, real-time loading data for each wagon will be displayed in a tabular form. Each row is dedicated to a specific wagon, and the table columns include Wagon Number, Weight, Overloading/Underloading Status, Temperature, and Humidity.
+
+                As each wagon gets loaded, its data is updated in the table in real-time. This enables operators and concerned authorities to monitor the loading status of each wagon individually.
+                
+                Once all the wagons are loaded, we will store this data in an Excel sheet for reference and historical records.
+                
+                Upon the train's arrival at its destination, a final weight check will be conducted to ensure that there has been no theft or tampering during transit. Any discrepancies will be promptly identified and investigated."
+                
+                This comprehensive approach ensures not only real-time monitoring of loading but also accountability and security checks during transportation.</h4>
+            <br>
+            <div class="diplayFlexContainer" >
+                <img src="railwaytrackLoadSensor.jpg" alt="" height="300px">
+                <h4>Each wagon is equipped with 8 wheels, arranged in 4 pairs. Our plan is to install load sensors along the railway track, ensuring a consistent spacing between each sensor that mirrors the distance between each pair of wheels on the wagon. Therefore, a minimum of 4 load sensors per wagon is necessary, but eight sensors are preferred to achieve the most accurate measurements. <br> <img src="8sensorsArrangedOnTrack.jpg" alt="" height="350px"></h4>
+            </div>
+            <br>
+            <div class="diplayFlexContainer" >
+                <h4>When all the wagons are positioned on the railway track, and the showel/payloader operator begins loading coal into the wagons, real-time data will be displayed on the website for the concerned authorities at CIL. Additionally, an external device will issue alerts to the showel/payloader operator, indicating whether the coal is being loaded correctly, if there is overloading, or if there is underloading. This dual monitoring system ensures both online reporting to authorities and immediate feedback to the equipment operator, enhancing the loading process's efficiency and accuracy. <br> <br> Then, when the train is fully loaded, we will retrieve the weight data and store it in an Excel sheet (available for download on our website). Afterward, we will reset all load measurements and commence recording data for the next train.</h4>
+
+                <img src="https://3.imimg.com/data3/NG/KP/MY-971618/rail-weigh-sensors-500x500.jpg" alt="" height="220px">
+            </div>
+            <br><br>
+            <h4><b>Barrier for our solution</b> </h4>
+            <br>
+            <div class="diplayFlexContainer">
+                <img src="UnevenWeight.jpg" alt="" height="150px">
+                <h4>Uneven weight distribution within a wagon is a significant factor that can contribute to derailments. The primary reason behind this risk is that excessive weight on one side causes greater wear and tear on the wheels of that side, increasing the likelihood of a derailment. Additionally, loading wagons with an imbalanced weight distribution can have adverse effects on the condition of the tracks, posing a potential threat to overall railway safety and infrastructure integrity. <br><br> To overcome this obstacle, the showel operator must ensure a uniform and even distribution of coal while loading the wagon.</h4>
+            </div>
+            <br>
+            <h4><b>Iot Setup for Showel operator</b></h4>
+            <h4>We have also developed an IoT setup that visually communicates the loading status, both overloading and underloading, directly to the shovel operator. It functions like a <i>traffic light system</i> , where the operator responsible for loading coal can visually determine whether to continue loading ('Green🟢' indicating 'proceed'), pause loading ('🟡Yellow' indicating 'halt'), or stop loading ('🔴Red' indicating 'overloading in progress'). This system provides real-time feedback on the loading process, enhancing efficiency and safety.</h4>
+            <br>
+            <h4 style="color: grey;"> <i> In short, we made an IOT based System that detects the temperature, humidity of the consignment also checks overloading & underloading status of the wagon showing it in a dedicated website and providing the information of the consignment to all the stakeholders </i></h4>
+            </div>
+        
+    </section>
+
+    <br><br><br>
+    <h5 style="padding: 0px 100px;">Architecture</h5>
+    <div class="Architecture">
+        
+        <img  src="architecture1new.png" alt="">
+        <img src="architecture1.png" alt="">
+    </div>
+    <BR></BR>
+    <section class="TechnologySection" id="Technology-Stack">
+        <h1>Technology Stack</h1>
+        <div class="card-scroller">
+            <div class="card">
+                <img src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png" alt="">
+                <h3>Frontend Stack</h3>
+                <p>User interactive website which show real time data to operator</p>
+            </div>
+            <div class="card">
+                <img src="https://in.mathworks.com/help/examples/thingspeak/win64/CollectAgriculturalDataOverTheThingsNetworkTSExample_11.png" alt="">
+                <h3>Thing Speak </h3>
+                <p>
+                    ThingSpeak is an open-source Internet of Things (IoT) platform that allows users to collect, analyze, and visualize data from connected devices and sensors. It provides a user-friendly interface for data logging, real-time monitoring, and integration with various IoT applications, making it a popular choice for IoT projects and research.</p>
+            </div>
+            <div class="card">
+                <img src="https://5.imimg.com/data5/YN/CM/MY-9380557/arduino-uno-ch340.jpg" alt="">
+                <h3>Arduino Uno R3</h3>
+                <p>The Arduino Uno R3 is a popular open-source microcontroller board known for its simplicity and versatility, making it an ideal choice for beginners and experienced makers alike. It offers a range of digital and analog I/O pins, a user-friendly development environment, and extensive community support for a wide variety of projects.</p>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/61VUy3kjCxL._AC_UF1000,1000_QL80_.jpg" alt="">
+                <h3>ESP8266 Node MCU</h3>
+                <p>The ESP8266 NodeMCU is a budget-friendly WiFi-enabled development board favored for IoT projects and quick prototyping.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.squarespace-cdn.com/content/v1/584d41b3f5e2310b396cd953/4457850d-7b4d-4fa8-93f5-d777d9b2327b/_s_e_sen-13-045-5.jpg" alt="">
+                <h3>Load Sensors & HX711 Amplifier</h3>
+                <p>A load sensor, when combined with an HX711 amplifier, forms a precise and reliable weight measurement system often used in applications like digital scales and industrial automation for accurate weight readings.</p>
+            </div>
+            <div class="card">
+                <img src="https://5.imimg.com/data5/YB/RJ/KA/SELLER-562456/dht-22-humidity-sensor-module.jpg" alt="">
+                <h3>DHT22</h3>
+                <p>The DHT22, also known as the AM2302, is a popular humidity and temperature sensor used in various IoT and weather monitoring applications due to its high accuracy and digital output.</p>
+            </div>
+            <div class="card">
+                <img src="data:image/png;base64,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" alt="">
+                <h3>Influx DB</h3>
+                <p>InfluxDB is a high-performance, open-source, and scalable time-series database designed for storing, querying, and visualizing time-series data. It is widely used in IoT, monitoring, and analytics applications for efficiently managing data collected over time, making it suitable for real-time and historical data analysis and visualization.</p>
+            </div>
+            <div class="card">
+                <img src="https://www.iteindia.in/wp-content/uploads/2019/10/php_mysql.png" alt="">
+                <h3>Backend Stack</h3>
+                <p>PHP and MySQL form a powerful and widely adopted combination for building dynamic and data-driven web applications.</p>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+        </div>
+    </section>
+    <!-- <img src="https://media.istockphoto.com/id/176776669/photo/coal-wagons.webp?b=1&s=170667a&w=0&k=20&c=qBeSG0zAPUcXrREmA92xf9XomwWLgK8uKmBIdmJwsJA=" alt="">
+    <img src="https://media.istockphoto.com/id/828126778/photo/rail-cars-loaded-with-coal.jpg?s=612x612&w=0&k=20&c=nOpU0yMbeOpxZnm8Q4-bQwIQWLEzgrBMpShSE4AMQf8=" alt=""> -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const checkButton = document.getElementById("checkButton");
+          const wagonNumberInput = document.getElementById("wagonNumberInput");
+          const dataTable = document.getElementById("dataTable");
+          const tableRows = dataTable.querySelectorAll("tbody tr");
+      
+          checkButton.addEventListener("click", function () {
+            const enteredWagonNumber = parseInt(wagonNumberInput.value);
+      
+            // Loop through table rows
+            tableRows.forEach(function (row) {
+              const wagonNumberCell = row.cells[0]; // Assuming wagon number is in the first cell
+      
+              // Check if wagon number matches the entered value
+              if (parseInt(wagonNumberCell.textContent) === enteredWagonNumber) {
+                row.style.display = "table-row"; // Show the row
+              } else {
+                row.style.display = "none"; // Hide the row
+              }
+            });
+          });
+        });
+      </script>
+
+</body>
+</html>

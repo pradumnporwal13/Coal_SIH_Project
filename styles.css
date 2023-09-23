@@ -1,0 +1,394 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.29),#111111),url(https://cdn.pixabay.com/photo/2014/04/20/21/19/freight-train-328763_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    background-repeat: no-repeat;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* NavBar of Website */
+.navBar{
+    /* height: 7vh; */
+    background-color: rgba(0, 0, 0, 0.824);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    
+    border-bottom: 0.6px solid white;
+    /* width: 100%;
+    position: fixed;
+    z-index: 999; */
+}
+#coal-Heading{
+    font-size: 35px;
+    position: relative;
+    top: 20.5px;
+}
+.RightSideOfNavBar{
+    display: flex;
+    justify-content: start;
+}
+.LeftSideOfNavBar{
+    padding-top: 25px;
+    /* align-items: center; */
+}
+.LeftSideOfNavBar ul{
+    display: flex;
+    justify-content: end;
+    /* align-items: baseline; */
+}
+.LeftSideOfNavBar ul li{
+    /* to remove bullets */
+    
+    list-style: none;
+    padding-left: 20px;
+}
+.LeftSideOfNavBar ul li a{
+    /* to remove Underline  */
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.LeftSideOfNavBar ul li a:hover{
+    color: red;
+}
+
+/* Home section  */
+.Home-Section{
+    height: 120vh;
+}
+.Home-Section H1 u{
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.249); */
+    /* text-align: center; */
+    padding-top: 30px;
+    padding-bottom: 15px;
+    /* text-decoration: solid; */
+    letter-spacing: 1.5px;
+}
+.Home-Section H1{
+    text-align: center;
+    color: red;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.Home-Section form{
+    padding: 0px  100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.Home-Section form input[type="number"]{
+    background-color: rgba(0, 0, 0, 0.299);
+    border: 2px solid black;
+    outline: none;
+    padding: 10px 50px;
+    font-size: 18px;
+    color: white;
+    width: 89%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.Home-Section form button{
+    width: 10%;
+    background-color: rgba(255, 0, 0, 0.804);
+    border: .5px solid rgba(176, 4, 4, 0.804);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
+.Home-Section form button:hover{
+    border-color: white;
+}
+
+/* table part  */
+.tablepart{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 74vh;
+    position: relative;
+    /* left: .7%; */
+    /* overflow-x: hidden; */
+    /* max-height: 300vh; */
+}
+
+.tablepart::-webkit-scrollbar {
+    display: none;
+}
+
+
+.tablepart table{
+    margin-top: 15px;
+    color: white;
+    border-radius: 5px;
+    border: 0.1px solid white;
+    background-color: rgba(0, 0, 0, 0.299);
+    
+}
+
+.tablepart table tr th{
+    padding: 18px;
+}
+.tablepart table tr td{
+    padding: 10px;
+    font-weight: 200;
+    text-align: center;
+} 
+
+/* excel sheet download  */
+.ExcelSheetDownload{
+    margin-top: 10px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.ExcelSheetDownload #ExcelSheet{
+    color: white;
+    background-color: white;
+    width: 49.5%;
+    border: none;
+    background-color: rgb(108, 176, 6);
+    padding: 10px;
+    font-size: 110%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: 700;
+}
+.ExcelSheetDownload #ExcelSheet:hover{
+    background-color: rgb(85, 139, 4);
+    border: 1px solid white;
+}
+.ExcelSheetDownload #ResetSensors{
+    color: white;
+    background-color: white;
+    width: 49.5%;
+    border: none;
+    background-color: red;
+    padding: 10px;
+    font-size: 110%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 700;
+}
+.ExcelSheetDownload #ResetSensors:hover{
+    background-color: rgb(159, 2, 2);
+    border: 1px solid white;
+}
+
+
+
+
+
+/* .SearchTrain{
+    display: block;
+    justify-content: stretch;
+    padding: 0px 100px;
+    border-radius: 10px;
+}
+@media (min-width : 320px) {
+    .SearchTrain{
+        display: block;
+        justify-content: stretch;
+    }
+}
+
+.SearchTrain form{
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.356);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#formElements{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.SearchTrain form input[type="text"]{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 40px  ;
+    width: 25em;
+    color: white;
+    padding:  0px 10px;
+    font-size: 16px ;
+    outline: none;
+}
+/* .SearchTrain form input[type="submit"]{
+    
+} */
+/* .SearchTrain form button{
+    font-size: 20px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    height: 40px;
+    border: 1px solid red;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 20px;
+}
+.SearchTrain form button:hover{
+    border: 1px solid white;
+} */
+
+/* table  */
+/* table{
+    
+}
+.TablePart{
+    padding: 0px 100px;
+}
+tr th{
+    padding: 17px;
+}
+tr td{
+    padding: 10px;
+}  */
+
+/* Project Section  */
+
+.Project-Section{
+    margin-top: 1px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 223vh;
+    padding:5px 100px;
+}
+#HeadingOfProjectSection{
+    display: flex;
+    justify-content: center;
+}
+.Project-Section h1{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.Project-Section h4{
+    color: black;
+    text-align: center;
+    font-weight: 200;
+}
+
+#Ministry_of_Coal_India_logo{
+    position: relative;
+    top: -10px;
+    padding-left: 10px;
+}
+
+#DescriptionOfProject h4{
+    text-align: left;
+}
+.diplayFlexContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.diplayFlexContainer h4{
+    margin-left: 20px;
+}
+.diplayFlexContainer img:hover{
+    transform: scale(1.03);
+}
+
+.Architecture{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    padding: 0px 100px;
+    height: 55%;
+}
+@media (min-width="") {
+    
+}
+/* Technology Section */
+
+.TechnologySection{
+    height: 100vh;
+    padding: 0px 100px;
+    width: 100%; /* Set the width of the section as needed */
+    overflow: hidden;
+}
+.TechnologySection h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* card-section  */
+.card-scroller {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    padding: 10px 0; /* Optional: Add padding around the cards */
+    width: 100%; /* Set the width to 100% for horizontal scrolling */
+}
+
+.card-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 17%; /* Set the minimum width of each card */
+    height: 450px; /*Set the height of each card */
+    margin-right: 10px; /* Optional: Add spacing between cards */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    /* line-height: 250px; Center content vertically */
+    font-size: 24px;
+    /* white-space: nowrap; Prevent card content from wrapping */
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.01);
+}
+
+.card img{
+    overflow: hidden;
+    height: 185px;
+    background-color: white;
+}
+.card h3{
+    font-size: 15px;
+    text-align: left;
+    padding: 5px;
+}
+.card p{
+    color: grey;
+    font-size: 13px;
+    text-align: left;
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+
+
+
+
+
+
