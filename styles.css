@@ -3,6 +3,7 @@
     margin: 0%;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    /* overflow-x: scroll; */
 }
 
 body{
@@ -12,6 +13,7 @@ body{
     height: 120vh;
     background-repeat: no-repeat;
     font-family: 'Ubuntu', sans-serif;
+    /* overflow-x: none; */
 }
 
 /* NavBar of Website */
@@ -22,6 +24,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 0px 100px;
+    width: 100%;
     
     border-bottom: 0.6px solid white;
     /* width: 100%;
