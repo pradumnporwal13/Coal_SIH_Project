@@ -8,12 +8,12 @@
 
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.29),#111111),url(https://cdn.pixabay.com/photo/2014/04/20/21/19/freight-train-328763_1280.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     height: 120vh;
     background-repeat: no-repeat;
     font-family: 'Ubuntu', sans-serif;
-    /* overflow-x: none; */
+    overflow-x: hidden;
 }
 
 /* NavBar of Website */
@@ -27,20 +27,49 @@ body{
     width: 100%;
     
     border-bottom: 0.6px solid white;
-    /* width: 100%;
-    position: fixed;
-    z-index: 999; */
+    /* position: fixed; */
+    z-index: 999; 
+}
+.RightSideOfNavBar{
+    /* actually me ye left side hai  */
+    display: flex;
+    justify-content: start;
+}
+.RightSideOfNavBar img{
+    height: 70px;
 }
 #coal-Heading{
     font-size: 35px;
     position: relative;
     top: 20.5px;
 }
-.RightSideOfNavBar{
-    display: flex;
-    justify-content: start;
+@media (width<420px) {
+    .navBar{
+        padding: 0px 40px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #coal-Heading{
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        top: 13.5px;
+        left: 10px;
+    }
+    .RightSideOfNavBar{
+        
+        display: flex;
+        justify-content: center;
+    }
+    .RightSideOfNavBar img{
+        height: 50px;
+    }
 }
+
+
+
 .LeftSideOfNavBar{
+    /* actually me ye right side hai  */
     padding-top: 25px;
     /* align-items: center; */
 }
@@ -64,11 +93,31 @@ body{
 .LeftSideOfNavBar ul li a:hover{
     color: red;
 }
+@media (width<420px) {
+    /* LeftSideOfNavBar jo ki actually me right me hai */
+    .LeftSideOfNavBar{
+        padding-top: 5px;
+        margin-bottom: 10px;
+    }
+    .LeftSideOfNavBar ul{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* align-items: baseline; */
+    }
+    .LeftSideOfNavBar ul li a{
+        font-size: 13px;
+        font-weight: 400;
+        
+    }
+}
+
 
 /* Home section  */
 .Home-Section{
     height: 120vh;
 }
+
 .Home-Section H1 u{
     color: white;
     /* background-color: rgba(0, 0, 0, 0.249); */
@@ -84,12 +133,25 @@ body{
     padding-top: 30px;
     padding-bottom: 15px;
 }
+@media (width<420px){
+    .Home-Section H1{
+        /* margin-top: 10px; */
+        font-size: 20px;
+    }
+}
 
 .Home-Section form{
     padding: 0px  100px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+}
+@media (width<420px){
+    .Home-Section form{
+        padding: 0px 18px;
+        /* text-align: justify; */
+    }
+
 }
 .Home-Section form input[type="number"]{
     background-color: rgba(0, 0, 0, 0.299);
@@ -101,8 +163,8 @@ body{
     width: 89%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    
 }
+
 
 .Home-Section form button{
     width: 10%;
@@ -115,6 +177,20 @@ body{
 }
 .Home-Section form button:hover{
     border-color: white;
+}
+@media (width<420px){
+    .Home-Section form{
+        
+    }
+    .Home-Section form input[type="number"]{
+        width: 79%;
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+    .Home-Section form button{
+        width: 20%;
+        font-size: 15px;
+    }
 }
 
 /* table part  */
@@ -130,13 +206,11 @@ body{
     /* overflow-x: hidden; */
     /* max-height: 300vh; */
 }
-
 .tablepart::-webkit-scrollbar {
     display: none;
 }
-
-
 .tablepart table{
+    width: 84%;
     margin-top: 15px;
     color: white;
     border-radius: 5px;
@@ -144,7 +218,6 @@ body{
     background-color: rgba(0, 0, 0, 0.299);
     
 }
-
 .tablepart table tr th{
     padding: 18px;
 }
@@ -153,6 +226,30 @@ body{
     font-weight: 200;
     text-align: center;
 } 
+.tablepart table tr td img{
+    height: 30px;
+}
+
+@media (width<420px){
+    .tablepart{
+        /* width: 90% ; */
+        padding: 10%;
+        margin: 0px auto;
+        overflow-x: hidden;
+    }
+    .tablepart table tr th{
+        padding: 10px 1px;
+        font-size: 9px;
+        font-weight: 400;
+        color: white;
+        background-color: rgba(255, 0, 0, 0.146);
+    }
+    .tablepart table tr td{
+        padding: 10px 0px;
+        font-size: 10px;
+        font-weight: 100;
+    }
+}
 
 /* excel sheet download  */
 .ExcelSheetDownload{
@@ -194,84 +291,23 @@ body{
     border: 1px solid white;
 }
 
-
-
-
-
-/* .SearchTrain{
-    display: block;
-    justify-content: stretch;
-    padding: 0px 100px;
-    border-radius: 10px;
-}
-@media (min-width : 320px) {
-    .SearchTrain{
-        display: block;
-        justify-content: stretch;
+@media (width<420px){
+    .ExcelSheetDownload{
+        margin-top: 20px;
+        padding: 0px 30px;
+    }
+    .ExcelSheetDownload #ExcelSheet{
+        font-size: 90%;
+    }
+    .ExcelSheetDownload #ResetSensors{
+        font-size: 90%;
     }
 }
 
-.SearchTrain form{
-    color: white;
-    background-color:  rgba(0, 0, 0, 0.356);
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-between;
-}
-#formElements{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.SearchTrain form input[type="text"]{
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 4px;
-    height: 40px  ;
-    width: 25em;
-    color: white;
-    padding:  0px 10px;
-    font-size: 16px ;
-    outline: none;
-}
-/* .SearchTrain form input[type="submit"]{
-    
-} */
-/* .SearchTrain form button{
-    font-size: 20px;
-    padding: 5px;
-    background-color: red;
-    color: white;
-    height: 40px;
-    border: 1px solid red;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    margin-left: 20px;
-}
-.SearchTrain form button:hover{
-    border: 1px solid white;
-} */
-
-/* table  */
-/* table{
-    
-}
-.TablePart{
-    padding: 0px 100px;
-}
-tr th{
-    padding: 17px;
-}
-tr td{
-    padding: 10px;
-}  */
 
 /* Project Section  */
-
 .Project-Section{
-    margin-top: 1px;
+    margin-top: -30px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -292,13 +328,11 @@ tr td{
     text-align: center;
     font-weight: 200;
 }
-
 #Ministry_of_Coal_India_logo{
     position: relative;
     top: -10px;
     padding-left: 10px;
 }
-
 #DescriptionOfProject h4{
     text-align: left;
 }
@@ -312,7 +346,6 @@ tr td{
 .diplayFlexContainer img:hover{
     transform: scale(1.03);
 }
-
 .Architecture{
     margin: auto;
     display: flex;
@@ -321,8 +354,21 @@ tr td{
     padding: 0px 100px;
     height: 55%;
 }
-@media (min-width="") {
-    
+@media (width<420px){
+    .Project-Section{
+        padding:0px 10px;
+    }
+    .Project-Section h1{
+        font-size: 20px;
+        text-align: center;
+        color: black;
+    }   
+    #Ministry_of_Coal_India_logo{
+        position: relative;
+        top: -7px;
+        padding-left: 10px;
+        height: 35px;
+    }
 }
 /* Technology Section */
 
